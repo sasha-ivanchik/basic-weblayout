@@ -414,13 +414,13 @@ function init() {
 
   let myPlacemark = new ymaps.Placemark([55.75846306898368, 37.601079499999905], {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../final work/img/contacts/point.svg',
+    iconImageHref: '/img/contacts/point.svg',
     iconImageSize: [20, 20],
   });
 
   let myPlacemark2 = new ymaps.Placemark([55.75846306898368, 37.601079499999905], {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../final work/img/contacts/point.svg',
+    iconImageHref: '/img/contacts/point.svg',
     iconImageSize: [20, 20],
   });
 
@@ -570,24 +570,24 @@ for (let anchor of anchors) {
 
 //  ========  scroll for mobile accordeon =============
 
-document.addEventListener('DOMContentLoaded', function () {
-  if (window.innerWidth <= 950) {
 
-    const anchorsBtns = document.querySelectorAll('.content-block__accordion-content-btn');
+if (window.innerWidth <= 950) {
 
-    anchorsBtns.forEach(function (e) {
-      e.addEventListener("click", function (el) {
+  const anchorsBtns = document.querySelectorAll('.content-block__accordion-content-btn');
 
-        const path = el.currentTarget.dataset.path
+  anchorsBtns.forEach(function (e) {
+    e.addEventListener("click", function (el) {
 
-        document.querySelector(`[data-target="${path}"]`).scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+      const path = el.currentTarget.dataset.path
+
+      document.querySelector(`[data-target="${path}"]`).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
     });
-  };
-});
+  });
+};
+
 
 //  ============ menu burger ==================
 const burgerIcon = document.querySelector('.header__burger');
