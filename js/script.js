@@ -414,13 +414,13 @@ function init() {
 
   let myPlacemark = new ymaps.Placemark([55.75846306898368, 37.601079499999905], {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/contacts/point.svg',
+    iconImageHref: '../final work/img/contacts/point.svg',
     iconImageSize: [20, 20],
   });
 
   let myPlacemark2 = new ymaps.Placemark([55.75846306898368, 37.601079499999905], {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/contacts/point.svg',
+    iconImageHref: '../final work/img/contacts/point.svg',
     iconImageSize: [20, 20],
   });
 
