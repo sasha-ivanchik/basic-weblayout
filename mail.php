@@ -10,8 +10,7 @@ $form_subject = trim($_POST["form_subject"]);
 
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
-$mail->Port = 587;
-$mail->SMTPSecure = 'ssl';
+
 
 $c = true;
 $message = '';
